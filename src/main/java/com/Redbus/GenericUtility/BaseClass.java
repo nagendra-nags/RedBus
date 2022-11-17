@@ -45,8 +45,7 @@ public class BaseClass {
 			WebDriverManager.chromedriver().setup();
 			driver= new ChromeDriver();
 		}
-		else if(BROWSER.equalsIgnoreCase("firefox"))
-		{
+		else if(BROWSER.equalsIgnoreCase("firefox"))		{
 			WebDriverManager.firefoxdriver().setup();
 			driver= new FirefoxDriver();
 		}
@@ -60,7 +59,7 @@ public class BaseClass {
 		driverlib.implicitlyWait(driver);
 		
 		//step6: fetch the webpage
-	//	driver.get(URL);
+		driver.get(URL);
 
 		
 	}
