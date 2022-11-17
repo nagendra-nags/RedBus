@@ -60,15 +60,16 @@ public class BaseClass {
 		driverlib.implicitlyWait(driver);
 		
 		//step6: fetch the webpage
-	//	driver.get(URL);
+		driver.get(URL);
+		Thread.sleep(5000);
 
 		
 	}
 	
-	@AfterClass
-	public void postcondition()
-	{
-		driver.quit();
-	}
+//	@AfterClass
+////	public void postcondition()
+////	{
+////		driver.quit();
+////	}
 
 }
