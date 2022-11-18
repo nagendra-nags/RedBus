@@ -60,7 +60,7 @@ public class BaseClass {
 		driverlib.implicitlyWait(driver);
 		
 		//step6: fetch the webpage
-	//	driver.get(URL);
+		driver.get(URL);
 
 		
 	}
