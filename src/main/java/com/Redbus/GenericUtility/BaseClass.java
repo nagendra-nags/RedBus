@@ -67,7 +67,7 @@ public class BaseClass {
 	@AfterClass
 	public void postcondition()
 	{
-		driver.quit();
+		//driver.quit();
 	}
 
 }
