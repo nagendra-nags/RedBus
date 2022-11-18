@@ -17,16 +17,11 @@ import com.Redbus.GenericUtility.BaseClass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Redbus_HomePageTest {
+public class Redbus_HomePageTest extends BaseClass{
 	
 	@Test
 	public void fromPlace() throws InterruptedException
 	{
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.get("https://www.redbus.in/bus-tickets/mysore-to-bangalore?fromCityName=Mysore,%20Karnataka,%20India&fromCityId=129&toCityName=Bangalore,%20Karnataka,%20India&toCityId=122&onward=24-Nov-2022&srcCountry=IND&destCountry=IND&sfcn=Mysore&stcn=Bangalore&opId=0&busType=Any");
 		
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
