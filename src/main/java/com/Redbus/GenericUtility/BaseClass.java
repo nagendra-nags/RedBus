@@ -62,13 +62,16 @@ public class BaseClass {
 		//step6: fetch the webpage
 		driver.get(URL);
 
+		Thread.sleep(5000);
+
+
 		
 	}
 	
-	@AfterClass
-	public void postcondition()
-	{
-		driver.quit();
-	}
+//	@AfterClass
+////	public void postcondition()
+////	{
+////		driver.quit();
+////	}
 
 }
