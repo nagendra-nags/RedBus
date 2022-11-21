@@ -8,7 +8,7 @@ public class FileUtility {
 	
 	public String getPropertyKeyValue(String key) throws Exception
 	{
-		FileInputStream fls= new FileInputStream(".//Data//commondata.properties");
+		FileInputStream fls= new FileInputStream(".\\data\\commondata.properties");
 		Properties prop=new Properties();
 		prop.load(fls);
 		String value = prop.getProperty(key);
